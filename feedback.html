@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Teacher Feedback Form</h1>
+        <form id="feedbackForm">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" name="studentName" required>
+
+            <label for="teacherName">Teacher Name:</label>
+            <input type="text" id="teacherName" name="teacherName" required>
+
+            <label for="courseName">Course Name:</label>
+            <input type="text" id="courseName" name="courseName" required>
+
+            <label for="teachingQuality">Rate Teaching Quality:</label>
+            <select id="teachingQuality" name="teachingQuality" required>
+                <option value="" disabled selected>Choose a rating</option>
+                <option value="1">Poor</option>
+                <option value="2">Below Average</option>
+                <option value="3">Average</option>
+                <option value="4">Good</option>
+                <option value="5">Excellent</option>
+            </select>
+
+            <label for="clarity">Rate Clarity of Teaching:</label>
+            <select id="clarity" name="clarity" required>
+                <option value="" disabled selected>Choose a rating</option>
+                <option value="1">Poor</option>
+                <option value="2">Below Average</option>
+                <option value="3">Average</option>
+                <option value="4">Good</option>
+                <option value="5">Excellent</option>
+            </select>
+
+            <label for="interaction">Rate Interaction with Students:</label>
+            <select id="interaction" name="interaction" required>
+                <option value="" disabled selected>Choose a rating</option>
+                <option value="1">Poor</option>
+                <option value="2">Below Average</option>
+                <option value="3">Average</option>
+                <option value="4">Good</option>
+                <option value="5">Excellent</option>
+            </select>
+
+            <label for="suggestions">Suggestions for Improvement:</label>
+            <textarea id="suggestions" name="suggestions" rows="5" placeholder="Your suggestions..." required></textarea>
+
+            <a href="done.html">Submit Feedback</a>
+        </form>
+    </div>
+</body>
+</html>
